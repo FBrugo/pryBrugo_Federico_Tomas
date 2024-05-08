@@ -28,31 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnBorrar = new Button();
+            btnGuardar = new Button();
+            pBoxFirma = new PictureBox();
+            lbl1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pBoxFirma).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnBorrar
             // 
-            button1.Location = new Point(53, 67);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnBorrar.BackColor = Color.LightPink;
+            btnBorrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBorrar.Location = new Point(12, 314);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(109, 56);
+            btnBorrar.TabIndex = 0;
+            btnBorrar.Text = "Borrar";
+            btnBorrar.UseVisualStyleBackColor = false;
+            btnBorrar.Click += btnBorrar_Click;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = Color.Pink;
+            btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(550, 314);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(109, 56);
+            btnGuardar.TabIndex = 1;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // pBoxFirma
+            // 
+            pBoxFirma.BackColor = Color.White;
+            pBoxFirma.Location = new Point(12, 123);
+            pBoxFirma.Name = "pBoxFirma";
+            pBoxFirma.Size = new Size(647, 174);
+            pBoxFirma.TabIndex = 2;
+            pBoxFirma.TabStop = false;
+            pBoxFirma.MouseMove += pBoxFirma_MouseMove;
+            // 
+            // lbl1
+            // 
+            lbl1.AutoSize = true;
+            lbl1.Font = new Font("Arial Rounded MT Bold", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl1.Location = new Point(-1, 21);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(680, 64);
+            lbl1.TabIndex = 3;
+            lbl1.Text = "Dibuje su firma en el recuadro blanco presionando \r\nclick derecho del mouse :";
             // 
             // pryFirma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            BackColor = Color.PaleTurquoise;
+            ClientSize = new Size(671, 394);
+            Controls.Add(lbl1);
+            Controls.Add(pBoxFirma);
+            Controls.Add(btnGuardar);
+            Controls.Add(btnBorrar);
             Name = "pryFirma";
             Text = "pryFirma";
+            ((System.ComponentModel.ISupportInitialize)pBoxFirma).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnBorrar;
+        private Button btnGuardar;
+        private PictureBox pBoxFirma;
+        private Label lbl1;
     }
 }

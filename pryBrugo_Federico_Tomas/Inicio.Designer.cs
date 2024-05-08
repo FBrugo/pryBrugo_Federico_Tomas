@@ -43,6 +43,7 @@
             btnFirma.TabIndex = 0;
             btnFirma.Text = "FIRMAR";
             btnFirma.UseVisualStyleBackColor = false;
+            btnFirma.Click += btnFirma_Click;
             // 
             // btnGalaga
             // 
@@ -55,6 +56,7 @@
             btnGalaga.TabIndex = 1;
             btnGalaga.Text = "JUGAR";
             btnGalaga.UseVisualStyleBackColor = false;
+            btnGalaga.Click += btnGalaga_Click;
             // 
             // Inicio
             // 
