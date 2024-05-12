@@ -10,19 +10,12 @@ using System.Windows.Forms;
 
 namespace pryBrugo_Federico_Tomas
 {
-    public partial class InicioJuego : Form
+    public partial class frmGameOver : Form
     {
-        public string NombreJugador { get; set; }
-        public InicioJuego()
+        public frmGameOver(string nombreJugador)
         {
             InitializeComponent();
-        }
-       
-
-        private void btnIniciar_Click(object sender, EventArgs e)
-        {
-            Juego formulariojuego = new Juego(NombreJugador);
-            formulariojuego.Show();
+            lblMensaje.Text = "¡Felicidades " + nombreJugador + ", ganaste!";
         }
     }
 }

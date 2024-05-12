@@ -2,15 +2,8 @@
 {
     partial class InicioJuego
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,18 +15,46 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "InicioJuego";
+            btnIniciar = new Button();
+            txtNombreJugador = new TextBox();
+            // SuspendLayout(); // Esta línea ha sido eliminada
+            // 
+            // btnIniciar
+            // 
+            btnIniciar.Location = new Point(668, 107);
+            btnIniciar.Name = "btnIniciar";
+            btnIniciar.Size = new Size(94, 29);
+            btnIniciar.TabIndex = 0;
+            btnIniciar.Text = "INICIAR";
+            btnIniciar.UseVisualStyleBackColor = true;
+            btnIniciar.Click += btnIniciar_Click;
+            // 
+            // txtNombreJugador
+            // 
+            txtNombreJugador.Location = new Point(150, 107);
+            txtNombreJugador.Name = "txtNombreJugador";
+            txtNombreJugador.Size = new Size(353, 27);
+            txtNombreJugador.TabIndex = 1;
+            // 
+            // InicioJuego
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.wp3172280;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtNombreJugador);
+            Controls.Add(btnIniciar);
+            Name = "InicioJuego";
+            Text = "InicioJuego";
+            // ResumeLayout(false); // Esta línea ha sido eliminada
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnIniciar;
+        private TextBox txtNombreJugador;
     }
 }

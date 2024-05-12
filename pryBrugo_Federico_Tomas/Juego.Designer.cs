@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Juego";
+            components = new System.ComponentModel.Container();
+            timerEnemigo = new System.Windows.Forms.Timer(components);
+            timerShot = new System.Windows.Forms.Timer(components);
+            lblPuntaje = new Label();
+            SuspendLayout();
+            // 
+            // timerEnemigo
+            // 
+            timerEnemigo.Enabled = true;
+            timerEnemigo.Interval = 500;
+            timerEnemigo.Tag = "naveEnemiga";
+            timerEnemigo.Tick += timerEnemigo_Tick;
+            // 
+            // timerShot
+            // 
+            timerShot.Enabled = true;
+            timerShot.Tag = "shot";
+            timerShot.Tick += timerShot_Tick;
+            // 
+            // lblPuntaje
+            // 
+            lblPuntaje.AutoSize = true;
+            lblPuntaje.ForeColor = Color.Red;
+            lblPuntaje.Location = new Point(551, 25);
+            lblPuntaje.Margin = new Padding(6, 0, 6, 0);
+            lblPuntaje.Name = "lblPuntaje";
+            lblPuntaje.Size = new Size(33, 20);
+            lblPuntaje.TabIndex = 0;
+            lblPuntaje.Text = "000";
+            
+            // 
+            // Juego
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(657, 395);
+            Controls.Add(lblPuntaje);
+            Name = "Juego";
+            Text = "Juego";
+            Load += Juego_Load;
+            KeyDown += Juego_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timerEnemigo;
+        private System.Windows.Forms.Timer timerShot;
+        private Label lblPuntaje;
     }
 }

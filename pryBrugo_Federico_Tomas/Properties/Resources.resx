@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Enemigo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemigo_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemigo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemigo_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FONDO_JUEGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FONDO_JUEGO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_background_by_tenshilove-d8f2jac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_background_by_tenshilove-d8f2jac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wp3172280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp3172280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
