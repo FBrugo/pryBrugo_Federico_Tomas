@@ -34,16 +34,20 @@
             // lblMensaje
             // 
             lblMensaje.AutoSize = true;
-            lblMensaje.Location = new Point(178, 67);
+            lblMensaje.BackColor = SystemColors.WindowText;
+            lblMensaje.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMensaje.ForeColor = SystemColors.ButtonHighlight;
+            lblMensaje.Location = new Point(129, 155);
             lblMensaje.Name = "lblMensaje";
-            lblMensaje.Size = new Size(81, 20);
+            lblMensaje.Size = new Size(548, 46);
             lblMensaje.TabIndex = 0;
-            lblMensaje.Text = "lblMensaje";
+            lblMensaje.Text = "¡FELICIDADES               ,GANASTE!";
             // 
             // frmGameOver
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.star_background_by_tenshilove_d8f2jac;
             ClientSize = new Size(800, 450);
             Controls.Add(lblMensaje);
             Name = "frmGameOver";

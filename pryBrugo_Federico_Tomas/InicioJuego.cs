@@ -13,13 +13,13 @@ namespace pryBrugo_Federico_Tomas
     public partial class InicioJuego : Form
     {
         public string NombreJugador { get; set; }
-        
+
         public InicioJuego()
         {
             InitializeComponent();
         }
-       
-        
+
+
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             if (txtNombreJugador.Text == "")
