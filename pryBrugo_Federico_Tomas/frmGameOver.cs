@@ -15,7 +15,7 @@ namespace pryBrugo_Federico_Tomas
         public frmGameOver(string nombreJugador)
         {
             InitializeComponent();
-            lblMensaje.Text = "¡Felicidades " + nombreJugador + ", ganaste!";
+            lblMensaje.Text = "¡Felicidades ," + nombreJugador + ", ganaste!";
         }
     }
 }
