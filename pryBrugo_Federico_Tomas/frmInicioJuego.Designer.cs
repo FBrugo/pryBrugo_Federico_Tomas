@@ -1,6 +1,6 @@
 ﻿namespace pryBrugo_Federico_Tomas
 {
-    partial class InicioJuego
+    partial class frmInicioJuego
     {
         private System.ComponentModel.IContainer components = null;
 

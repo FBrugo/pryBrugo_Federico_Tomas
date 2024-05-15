@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace pryBrugo_Federico_Tomas
 {
-    public partial class pryFirma : Form
+    public partial class frmFirma : Form
     {
-        public pryFirma()
+        public frmFirma()
         {
             InitializeComponent();
         }

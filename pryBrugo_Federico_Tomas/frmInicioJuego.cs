@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace pryBrugo_Federico_Tomas
 {
-    public partial class InicioJuego : Form
+    public partial class frmInicioJuego : Form
     {
         public string NombreJugador { get; set; }
 
-        public InicioJuego()
+        public frmInicioJuego()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace pryBrugo_Federico_Tomas
             else
             {
                 NombreJugador = txtNombreJugador.Text;
-                Juego formulariojuego = new Juego(NombreJugador);
+                frmJuego formulariojuego = new frmJuego(NombreJugador);
                 formulariojuego.Show();
             }
         }

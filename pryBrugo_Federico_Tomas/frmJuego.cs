@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace pryBrugo_Federico_Tomas
 {
-    public partial class Juego : Form
+    public partial class frmJuego : Form
     {
         // Declaración de variables de instancia para la nave del jugador, la nave enemiga y el disparo.
         clsNave objNaveJugador = new clsNave();
@@ -27,7 +27,7 @@ namespace pryBrugo_Federico_Tomas
         string nombre;
 
         // Constructor de la clase Juego que recibe el nombre del jugador como parámetro.
-        public Juego(string nombreJugador)
+        public frmJuego(string nombreJugador)
         {
             // Inicialización de componentes del formulario.
             InitializeComponent();

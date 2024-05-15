@@ -1,21 +1,21 @@
 namespace pryBrugo_Federico_Tomas
 {
-    public partial class Inicio : Form
+    public partial class frmInicio : Form
     {
-        public Inicio()
+        public frmInicio()
         {
             InitializeComponent();
         }
 
         private void btnFirma_Click(object sender, EventArgs e)
         {
-            pryFirma pryFirma = new pryFirma();
+            frmFirma pryFirma = new frmFirma();
             pryFirma.Show();
         }
 
         private void btnGalaga_Click(object sender, EventArgs e)
         {
-            InicioJuego inicioJuego = new InicioJuego();
+            frmInicioJuego inicioJuego = new frmInicioJuego();
             inicioJuego.Show();
         }
     }

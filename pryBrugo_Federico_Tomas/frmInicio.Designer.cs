@@ -1,6 +1,6 @@
 ﻿namespace pryBrugo_Federico_Tomas
 {
-    partial class Inicio
+    partial class frmInicio
     {
         /// <summary>
         ///  Required designer variable.

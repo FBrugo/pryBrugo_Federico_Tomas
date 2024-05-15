@@ -1,6 +1,6 @@
 ﻿namespace pryBrugo_Federico_Tomas
 {
-    partial class Juego
+    partial class frmJuego
     {
         /// <summary>
         /// Required designer variable.
