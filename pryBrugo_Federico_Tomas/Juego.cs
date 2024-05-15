@@ -43,7 +43,7 @@ namespace pryBrugo_Federico_Tomas
             Controls.Add(objNaveJugador.imgNAVE);
 
             // Ajusta la posición inicial de la nave para que aparezca más arriba en el formulario
-            objNaveJugador.imgNAVE.Location = new Point((this.ClientSize.Width - objNaveJugador.imgNAVE.Width) / 2, this.ClientSize.Height - 100);
+            objNaveJugador.imgNAVE.Location = new Point((this.ClientSize.Width - objNaveJugador.imgNAVE.Width) / 2, this.ClientSize.Height - 50);
         }
 
         // Contador para controlar el número de naves enemigas creadas.
@@ -84,7 +84,7 @@ namespace pryBrugo_Federico_Tomas
             }
             else
             {
-                timerEnemigo.Enabled = false; // Detiene el temporizador una vez que se hayan creado 10 enemigos
+                timerEnemigo.Enabled = false; // Detiene el temporizador una vez que se hayan creado 6 enemigos
             }
         }
 
@@ -100,7 +100,7 @@ namespace pryBrugo_Federico_Tomas
                 objDisparo = new clsDisparo();
 
                 // Calcula la posición inicial del disparo, ubicándolo sobre la nave jugador
-                Point location = new Point(objNaveJugador.imgNAVE.Location.X + 49,
+                Point location = new Point(objNaveJugador.imgNAVE.Location.X + 15,
                     objNaveJugador.imgNAVE.Location.Y - 10);
 
                 // Realiza el disparo desde la posición calculada
@@ -117,7 +117,7 @@ namespace pryBrugo_Federico_Tomas
             if (e.KeyCode == Keys.Right)
             {
                 // Verifica si la posición X de la nave jugador está dentro de los límites de la pantalla
-                if (objNaveJugador.imgNAVE.Location.X >= 703)
+                if (objNaveJugador.imgNAVE.Location.X >= 570)
                 {
                     // Si está fuera de los límites, reposiciona la nave a la izquierda de la pantalla
                     objNaveJugador.imgNAVE.Location = new Point(-20, objNaveJugador.imgNAVE.Location.Y);
@@ -137,7 +137,7 @@ namespace pryBrugo_Federico_Tomas
                 if (objNaveJugador.imgNAVE.Location.X <= -18)
                 {
                     // Si está fuera de los límites, reposiciona la nave a la derecha de la pantalla
-                    objNaveJugador.imgNAVE.Location = new Point(831, objNaveJugador.imgNAVE.Location.Y);
+                    objNaveJugador.imgNAVE.Location = new Point(570, objNaveJugador.imgNAVE.Location.Y);
                 }
                 else
                 {
@@ -162,7 +162,7 @@ namespace pryBrugo_Federico_Tomas
                 if (disparo.imgDisparo.Top > 0)
                 {
                     // Si el disparo todavía está en pantalla, lo mueve hacia arriba
-                    disparo.imgDisparo.Top -= 10; // Puedes ajustar este valor según la velocidad deseada del disparo
+                    disparo.imgDisparo.Top -= 15; // Puedes ajustar este valor según la velocidad deseada del disparo
 
                     // Itera sobre todos los controles en el formulario para verificar si el disparo ha colisionado con una nave enemiga
                     foreach (Control posibleNave in this.Controls)

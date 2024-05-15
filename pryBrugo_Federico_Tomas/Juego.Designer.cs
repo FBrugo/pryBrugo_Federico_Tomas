@@ -52,20 +52,21 @@
             lblPuntaje.AutoSize = true;
             lblPuntaje.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblPuntaje.ForeColor = Color.Red;
-            lblPuntaje.Location = new Point(551, 9);
-            lblPuntaje.Margin = new Padding(6, 0, 6, 0);
+            lblPuntaje.Location = new Point(482, 7);
+            lblPuntaje.Margin = new Padding(5, 0, 5, 0);
             lblPuntaje.Name = "lblPuntaje";
-            lblPuntaje.Size = new Size(130, 31);
+            lblPuntaje.Size = new Size(109, 25);
             lblPuntaje.TabIndex = 0;
             lblPuntaje.Text = "SCORE 000";
             // 
             // Juego
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(685, 417);
+            ClientSize = new Size(584, 311);
             Controls.Add(lblPuntaje);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Juego";
             Text = "Juego";
             Load += Juego_Load;

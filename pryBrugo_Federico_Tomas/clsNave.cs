@@ -16,7 +16,7 @@ namespace pryBrugo_Federico_Tomas
         //int damage; //daño
         public PictureBox imgNAVE;
 
-        
+
 
         //constructor
         public clsNave()
@@ -27,7 +27,7 @@ namespace pryBrugo_Federico_Tomas
         }
         //propiedades de la clase variables globales
 
-        
+
 
 
         //Metodos (acciones)
@@ -38,8 +38,8 @@ namespace pryBrugo_Federico_Tomas
             //damage = 1;
 
             imgNAVE = new PictureBox();
-            imgNAVE.Size = new System.Drawing.Size(100, 100);
-            imgNAVE.Location = new Point(370, 700);
+            imgNAVE.Size = new System.Drawing.Size(35, 35);
+            imgNAVE.Location = new Point(0, 600);
             imgNAVE.SizeMode = PictureBoxSizeMode.StretchImage;
             imgNAVE.Image = Properties.Resources.Nave;
         }
@@ -52,18 +52,18 @@ namespace pryBrugo_Federico_Tomas
         int codigoEnemigo;
         int posX, posY;
 
-        
+
 
         public void CrearEnemigo()
         {
             codigoEnemigo = aleatorioEnemigo.Next(0, 2);
 
             imgNAVE = new PictureBox();
-            imgNAVE.Size = new System.Drawing.Size(70, 70);
+            imgNAVE.Size = new System.Drawing.Size(50, 50);
             imgNAVE.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            posX = aleatorioPosX.Next(0, 675);
-            posY = aleatorioPosY.Next(0, 200);
+            posX = aleatorioPosX.Next(0, 550);
+            posY = aleatorioPosY.Next(0, 100);
             imgNAVE.Location = new Point(posX, posY);
             imgNAVE.Tag = "naveEnemiga";
 
@@ -82,7 +82,7 @@ namespace pryBrugo_Federico_Tomas
                     imgNAVE.Image = Properties.Resources.Enemigo_2;
                     break;
             }
-           
+
         }
 
 

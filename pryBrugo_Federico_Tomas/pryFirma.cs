@@ -30,19 +30,27 @@ namespace pryBrugo_Federico_Tomas
                 g.CopyFromScreen(PointToScreen(pBoxFirma.Location), new Point(0, 0), pBoxFirma.Size);
             }
 
-            // Mostrar un diálogo de guardar archivo
-            SaveFileDialog saveDialog = new SaveFileDialog();
-            saveDialog.Filter = "Archivo de imagen (*.png)|*.png|All files (*.*)|*.*";
-            saveDialog.FileName = "imagen_guardada.png"; // Nombre predeterminado del archivo
+            // Obtener la carpeta de destino en el escritorio
+            string carpetaDestino = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "Firmas");
 
-            if (saveDialog.ShowDialog() == DialogResult.OK)
+            // Verificar si la carpeta no existe y crearla si es necesario
+            if (!Directory.Exists(carpetaDestino))
             {
-                // Guardar el bitmap como un archivo de imagen
-                bitmap.Save(saveDialog.FileName, ImageFormat.Png);
+                Directory.CreateDirectory(carpetaDestino);
             }
+
+            // Construir el nombre del archivo con la fecha y hora actual
+            string nombreArchivo = $"imagen_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
+
+            // Construir la ruta completa del archivo
+            string rutaCompleta = Path.Combine(carpetaDestino, nombreArchivo);
+
+            // Guardar el bitmap como un archivo de imagen
+            bitmap.Save(rutaCompleta, ImageFormat.Png);
 
             // Liberar recursos
             bitmap.Dispose();
+
             try
             {
                 MessageBox.Show("Firma Grabada");
